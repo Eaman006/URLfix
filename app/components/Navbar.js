@@ -17,7 +17,7 @@ const Navbar = () => {
             <Link href="/contact"> <li className='hover:text-blue-400 cursor-pointer'>Contact</li></Link>
             <li className='flex gap-5'>
               <Link href="/generate"><button>TryNow</button></Link>
-              <Link href="/github"><button>Github</button></Link>
+              <Link href="https://github.com/Eaman006/URLfix.git"><button>Github</button></Link>
             </li>
         </ul>
     </nav>
