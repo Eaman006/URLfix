@@ -29,14 +29,7 @@ const Navbar = () => {
         <li className={`cursor-pointer ${getActiveClass('/contact')}`}>
           <Link href="/contact">Contact</Link>
         </li>
-        <li className="flex gap-5">
-          <Link href="/generate">
-            <button>Try Now</button>
-          </Link>
-          <Link href="https://github.com/Eaman006/URLfix.git">
-            <button>GitHub</button>
-          </Link>
-        </li>
+        
       </ul>
     </nav>
   );
