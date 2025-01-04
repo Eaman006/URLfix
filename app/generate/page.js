@@ -6,16 +6,18 @@ const page = () => {
   const [url, seturl] = useState("")
   const [shorturl, setshorturl] = useState("")
   const [generated, setgenerated] = useState(false)
-  
+
   return (
-    <div>
-      <div className=' mx-auto max-w-lg'>
-      <div>Generate your Short URLS</div>
-      <div className='flex flex-col text-black gap-5'>
-      <input className='p-4 focus:outline-purple-600' type="text" placeholder='Enter your url here' onChange={(e)=>seturl(e.target.value)} value={url} />
-      <input className='p-4 focus:outline-purple-600' type="text" placeholder='Enter your preffered short url text here' onChange={(e)=>setshorturl(e.target.value)} value={shorturl} />
-      </div>
-      <button>Generate</button>
+    <div className='pt-[10%]'>
+      <div className='mx-auto max-w-lg px-5 py-2 bg-[#ffffff28] rounded-lg border border-white'>
+        <div className='text-center my-2 justify-center font-bold text-xl' >Generate your Short URLS</div>
+        <div className='flex flex-col text-black gap-5 my-3'>
+          <input className='p-4 focus:outline-purple-600 rounded-full' type="text" placeholder='Enter your url here' onChange={(e) => seturl(e.target.value)} value={url} />
+          <input className='p-4 focus:outline-purple-600 rounded-full' type="text" placeholder='Enter your preffered short url text here' onChange={(e) => setshorturl(e.target.value)} value={shorturl} />
+        </div>
+        <div className='flex justify-center items-center my-5'>
+        <button className='bg-purple-400 hover:bg-purple-600 hover:active:bg-purple-900 py-2 px-5 rounded-full font-bold'>Generate</button>
+        </div>
       </div>
     </div>
   )
