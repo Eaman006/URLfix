@@ -15,7 +15,7 @@ export default function Home() {
       
       <div className={`absolute inset-0 flex items-center justify-center text-white`}>
         <div className="bg-[#ffffff29] rounded-lg border border-white p-2">
-          <h1 className={`m-2 font-bold text-center text-2xl ${poppins.className}`}>Shortening url is much easier now</h1>
+          <h1 className={`m-2 font-bold text-center text-xl ${poppins.className}`}>Shortening url easier now</h1>
           <div className="m-2 flex gap-2">
             <Image 
             alt="arrow" 
