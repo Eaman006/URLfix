@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import background from './background.jpg';
+import Image from "next/image";
 
 
 
@@ -28,7 +30,23 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        {children}
+
+        <div className="md:w-full w-[150%] h-[130vh] md:h-[91vh] relative">
+      <Image
+        alt="background"
+        src={background}
+        placeholder="blur"
+        quality={100}
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover",
+          zIndex: -1, // Ensure the image stays in the background
+        }}
+      />
+      <div style={{ position: "relative", zIndex: 1 }}>{children}</div>
+    </div>
+        
       </body>
     </html>
   );

@@ -11,18 +11,8 @@ const poppins = Poppins({
 
 export default function Home() {
   return (
-    <div className="relative md:w-full w-[150%] h-[130vh] md:h-[91vh]">
-      <Image
-        alt="background"
-        src={background}
-        placeholder="blur"
-        quality={100}
-        fill
-        sizes="100vw"
-        style={{
-          objectFit: 'cover',
-        }}
-      />
+    <div className="relative md:w-full w-[100%] h-screen md:h-[91vh]">
+      
       <div className={`absolute inset-0 flex items-center justify-center text-white`}>
         <div className="bg-[#ffffff29] rounded-lg border border-white p-2">
           <h1 className={`m-2 font-bold text-center text-2xl ${poppins.className}`}>Shortening url is much easier now</h1>
