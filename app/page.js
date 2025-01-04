@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Poppins } from 'next/font/google'
-import background from './background.jpg'
 import Link from "next/link";
 
 

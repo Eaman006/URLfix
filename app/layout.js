@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import background from './background.jpg';
 import Image from "next/image";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 
@@ -46,7 +47,7 @@ export default function RootLayout({ children }) {
       />
       <div style={{ position: "relative", zIndex: 1 }}>{children}</div>
     </div>
-        
+    <SpeedInsights />        
       </body>
     </html>
   );
