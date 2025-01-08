@@ -6,7 +6,7 @@ import Link from 'next/link'
 const page = () => {
   const [url, seturl] = useState("")
   const [shorturl, setshorturl] = useState("")
-  const [generated, setgenerated] = useState(false)
+  const [generated, setgenerated] = useState("")
   const generate = () => {
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
