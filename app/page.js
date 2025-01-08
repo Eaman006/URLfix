@@ -13,7 +13,7 @@ export default function Home() {
     <div className="relative md:w-full w-[100%] h-screen md:h-[91vh]">
       
       <div className={`absolute inset-0 flex items-center justify-center text-white`}>
-        <div className="bg-[#ffffff29] rounded-lg border border-white p-2">
+        <div className="bg-[#04040429] rounded-lg border border-white p-2">
           <h1 className={`m-2 font-bold text-center text-xl ${poppins.className}`}>Shortening url easier now</h1>
           <div className="m-2 flex gap-2">
             <Image 
@@ -43,7 +43,9 @@ export default function Home() {
             <div>Enjoy ads free premium experiences</div>
           </div>
           <div className="flex items-center justify-center gap-2">
-            <button className="m-2 bg-purple-500 hover:bg-purple-800 p-2 font-bold rounded-full border border-white"><Link href="/generate">Try Now!</Link></button>
+          <Link href="/generate">
+            <button className="m-2 bg-purple-500 hover:bg-purple-800 p-2 font-bold rounded-full border border-white">Try Now!</button>
+            </Link>
             <button className="m-2 bg-black hover:bg-gray-800 p-2 font-bold rounded-full border border-white"><Link href="https://github.com/Eaman006/URLfix.git">GitHub</Link></button>
           </div>
         </div>
